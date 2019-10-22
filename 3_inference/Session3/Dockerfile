@@ -1,6 +1,6 @@
 FROM nvcr.io/nvidia/deepstream:4.0.1-19.09-devel
 
-RUN apt-get update
+#RUN apt-get update
 
 RUN apt-get install wget -y
 
@@ -31,7 +31,7 @@ RUN mkdir /plugins/lib_deepstream_backup/
 
 RUN cp  /usr/lib/x86_64-linux-gnu/libnvinfer* /plugins/lib_deepstream_backup/
 
-COPY deepstream.ipynb /root/deepstream_sdk_v4.0.1_x86_64/
+COPY deepstream_ssd.ipynb /root/deepstream_sdk_v4.0.1_x86_64/
 
 run mkdir /root/deepstream_sdk_v4.0.1_x86_64/ds_figures/
 

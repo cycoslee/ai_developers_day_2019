@@ -85,7 +85,7 @@ parse-bbox-func-name=NvDsInferParseCustomSSD
 custom-lib-path=nvdsinfer_custom_impl_ssd/libnvdsinfer_custom_impl_ssd.so
 
 [class-attrs-all]
-threshold=0.3
+threshold=0.5
 roi-top-offset=0
 roi-bottom-offset=0
 detected-min-w=0
