@@ -50,9 +50,8 @@ RUN find /opt/tensorrt/samples -name requirements.txt -print0 | xargs -0 -n1 sed
 # Install miscellaneous Python packages
 RUN /opt/tensorrt/python/python_setup.sh
 
-# Export environment variable for webcam functionality
-ENV QT_X11_NO_MITSHM=1
+RUN pip install jupyter matplotlib
 
 # Return to project directory and open a terminal
-WORKDIR /mnt
+WORKDIR /workspace
 CMD /bin/bash
