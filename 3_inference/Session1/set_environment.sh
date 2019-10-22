@@ -8,4 +8,4 @@ fi
 
 # Start the docker container
 echo "Starting docker container"
-docker run --runtime=nvidia -it -p 8886:8886 -p 6006:6006 -v `pwd`:/workspace/tensorrt_ssd tensorrt_ssd
+docker run --runtime=nvidia -it -p 8886:8886 -p 6006:6006 -v `pwd`:/workspace/tensorrt_ssd -w /workspace/tensorrt_ssd tensorrt_ssd
